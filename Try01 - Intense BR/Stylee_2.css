@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  color:white;
+}
+.container{
+  height: 100vh;
+  padding-top: 2%;
+  background-image: url(https://images5.alphacoders.com/107/1079844.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+}
+.labels{
+  padding-left: 42%;
+  font-weight: 1000;
+  color: #ffff33;
+  font-size: 30px;
+  text-shadow: 2px 2px #1a1712;
+}
+.table{
+  background-color:#1a1712; 
+  width: 100%;
+}
+button{
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+  .caphighlight{
+    font-size: 30px; 
+    width: 100%;
+    color:#ffff33;
+    font-family:luminari;
+    font-weight: 800;
+  }
+
+  .lorem{
+    padding-left: 15%; 
+    font-size: 15px; 
+    color: white;
+    padding-top: 8%;
+    padding-bottom:2%;
+    width: 100%;
+  }
+  .bgcolor{
+    background-color: #1b240f;
+  }
+  .tablestyle{
+    width: 100%; 
+    padding-left: 15%;
+    padding-top: 1.5%;
+  }
+  
+  .text2{
+    font-weight: normal; 
+    font-size: 20px; 
+    padding-left: 15%; 
+    padding-top: 1%"
+  }
+  
+  p{
+    font-size: 28px;
+    padding-left: 15%;
+    padding-top:7%;
+  }
+  

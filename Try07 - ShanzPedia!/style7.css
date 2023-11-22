@@ -1,0 +1,255 @@
+.root{
+    font-family: 'Cormorant Garamond', serif;
+}
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 94%);
+}
+/*Parent class ni Nav*/
+.opening{
+    height: 17vh;
+    padding: 10px;
+    margin-top:6px;
+    margin-bottom:6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #c4d9ea;*/
+    background: rgb(38,7,105);
+    background: linear-gradient(90deg, rgba(38,7,105,0.7483368347338936) 0%, rgba(104,95,159,1) 31%, rgba(161,171,206,1) 76%, rgba(189,207,228,1) 100%, rgba(196,217,234,1) 100%);
+}
+/*---NAVIGATION---*/
+
+a:hover {
+    color: white;
+}
+a:active{
+    color: yellow;
+}
+
+.navigation{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    min-width: 95%;
+    position: absolute; 
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+nav{  
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{  
+    list-style: circle;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 13px;
+}
+nav ol{
+   list-style: none;
+   text-align: left;
+   font-size: 13px;
+}
+.intro{
+   float: left;
+   margin-left: 100px;
+}
+.Main_Title{
+    position:relative; /*connected gihapon siya sa parent, but i use this para free siya to move from top,bottom, left and right*/
+    top: 120px; /*Para ako kind of ma in between si title sa flex-box container*/
+    min-width: 50%;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #808080;
+}
+
+/*--------------*/
+.flex-box-container{
+    height: 100vh;
+    padding:30px;
+    padding-top: 60px;
+    margin: 30px;
+    margin-left:30px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+   /* background-color: blue;*/
+}
+/*For dummy boxes, para ma visualize ang layout niya before ko nag add og contents*/
+.flex-items{
+    width: 200px;
+    margin: 15px;
+   /* border: 3px solid #333;
+    background-color: yellow;*/
+}
+.flex1bg{
+    border: 1px solid #808080;
+    background-color: #c1c1c1;
+}
+.flex-1{
+    position: relative; /*para mora siyag mo move up regardless of the padding*/
+    bottom: 30px; 
+    min-height: 800px;
+    align-self: flex-start;
+    flex-grow:1;
+    flex-basis:0;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.flex-2{
+    min-height: 500px;
+    flex-grow:3;
+    flex-basis:0;
+    align-self: flex-start;
+    /*display: flex; butngan ta nako ani, since this is the parent of flex-2-1 man pero nisabay raman ang iyang pag grow haha*/
+}
+.flex-3{
+    min-height: 300px;
+    min-width: 250px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    align-self: flex-start; 
+    border: 1px solid #808080; 
+}
+
+/*flex-2 details design*/
+.title{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #808080;
+}
+.content{
+    padding-left: 12px;
+    padding-right: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: justify;
+}
+.flex-2-1{
+    min-height: 100px;
+    min-width:95%;
+    align-self: flex-start;
+    flex-grow: 1;
+}
+.styled-table {
+    border: 1px solid #808080;
+    border-collapse: collapse; 
+    font-size: 13px;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #C0C0C0;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+.styled-table tr td{
+    padding: 3px;
+    border: 1px solid #808080;
+}
+
+@media screen and (max-width: 800px){ /*if screen size is lower than 800px, two of the flex item will dissapear*/
+    .flex-1 , .flex-3{
+        display:none;
+    }
+    .flex2-1, .flex2-2{
+        display: none;
+    }
+    .Main_Title{
+        text-align:center;
+    }
+}
+@media screen and (max-width: 980px){ /*if screen size is lower than 800px, two of the flex item will dissapear*/
+    .styled-table{
+        font-size:9px;
+    }
+}
+table td{
+    padding-left: 30px;
+    font-size: 13px;
+}
+table th{
+    padding-left: 35px;
+    font-size: 13px;
+}
+.flex3-title{
+    background-color: #c4d9ea;
+    text-align: center;
+    margin: 4px;   
+    margin-top: 5px;
+    padding: 2px;
+    font-weight: 800; 
+}
+.flex3-title2{
+    background-color: #c4d9ea;
+    text-align: center; 
+    margin:2px;
+    margin-left:10px;
+    margin-right:10px;
+    padding: 2px;
+    font-weight: 800;  
+    font-size: 13px; 
+}
+.content2{
+    font-size: 12px;
+    padding-left: 12px;
+    padding-right:18px;
+    text-align: justify;
+    margin: 18px;
+}
+.IMAGE{
+    margin:auto;
+    display: block;
+    width:auto;
+    height:200px;
+}
+.imageclass{
+    display:flex;
+    justify-content: center;
+    margin: 8px;
+}
+.image1, .image2, .image3, .image4,.image5,.image6{
+    width: 200px;
+    height: 170px;
+    margin:5px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow:  10px 10px 20px #9e9e9e,
+             -10px -10px 20px #ffffff;
+}
+.gifclass{
+    padding-top: 20px;
+    /*min-height: 500px;*/
+}
+.GIFclass{
+    min-height: 500px;
+}
+
+
+
+

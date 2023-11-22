@@ -1,0 +1,130 @@
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;   /* not sure if needed ni kay block nana ang div i believe */
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{    /*Dili siya mo work if .nav Why man? hmmm..*/   /* guess ra nako pero maybe kay reserved ang "nav" for the nav element */
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{  /*Iya gipa horizontal si Home Region and About*/
+    list-style: circle;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.row{
+    display:flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.card-container {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 15px;
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 25px;
+    /* margin: 10px 15px;recommend kog gap instead */
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s; /*para molihok yeah*/ /* gi addan nakog s */
+}
+.card:hover{  /*para molihok yeah*/
+    transform: translateY(-10px);
+}
+
+/* ga use kog nth child */
+.card:nth-child(1){
+    background-image: url(images/pic-1.png);
+}
+.card:nth-child(2){
+    background-image: url(images/pic-2.png);
+}
+.card:nth-child(3){
+    background-image: url(images/pic-3.png);
+}
+.card:nth-child(4){
+    background-image: url(images/pic-4.png);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 5px #000;
+    font-size: 8px;
+}
